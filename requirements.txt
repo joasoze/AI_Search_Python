@@ -1,0 +1,7 @@
+python-dotenv
+azure-identity
+azure-storage-blob
+azure-core
+azure-search-documents
+openai
+tiktoken
