@@ -1,7 +1,7 @@
-# Integrating AI Search in a RAG (Retrival Augumented Generation) pattern. 
+# Integrating AI Search in a RAG (Retrival Augumented Generation) pattern on Azure Data Manager for Energy Data (ADME). 
 
 
-This codebase is made to help accelerate anyone who wants to use AI Search, and needs to create, populate and use AI Search with Azure OpenAI in Python.
+This codebase is made to help accelerate anyone who wants to use AI Search, and needs to create, populate and use AI Search with Azure OpenAI in Python. 
 
 # Background
 
@@ -64,7 +64,7 @@ In the code examples Entra ID is mostly used, but [search_no_vector_api_key.py](
     pip install -r requirements.txt
     ```
 
-## 6. Run the Application
+## 6. Configuration
 - Rename the .env_sample file to .env and fill out the variables in the file.
 
 ![Environment file example](images/env_file.png)
