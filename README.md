@@ -20,7 +20,7 @@ This page shows good examples of how to switch between Azure OpenAI and OpenAI. 
 
 https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/switching-endpoints
 
-In the code examples Entra ID is mostly used, but [search_no_vector_api_key.py](search_no_vector_api_key.py) uses API Key for those who might want to use it.
+In the code examples Entra ID is mostly used, but [search_no_vector_api_key.py](code/search_no_vector_api_key.py) uses API Key for those who might want to use it.
 
 # How to Fork, Clone, and Set Up the Project
 
@@ -83,27 +83,27 @@ If you are using Azure Entra ID, then run `AZ Login` first. These examples will 
 This script [create_index_no_vector.py](code/create_index_no_vector.py) will create an index in your AI Search instance. 
 
 ### Create an index with vectors
-This script [create_index_vector.py](create_index_vector.py) will create an index with a field ready for vectors: **contentVector** in addition to the other standard fields.
+This script [create_index_vector.py](code/create_index_vector.py) will create an index with a field ready for vectors: **contentVector** in addition to the other standard fields.
 
 
 ## Part Two - Populating an AI Search index
 This code will populate AI Search index in the same format as used in the 'Creating an AI Search index' above
 
 ### Populate an index with no vectors
-This script [populate_index_no_vector.py](populate_index_no_vector.py) will populate the AI Search index with no vector field created in the last part
+This script [populate_index_no_vector.py](code/populate_index_no_vector.py) will populate the AI Search index with no vector field created in the last part
 
 ### Populate an index with vectors
-This script [populate_index_vector.py](populate_index_vector.py) will populate the AI Search index including the vector field. It uses Azure OpenAI to create the embeddings. 
+This script [populate_index_vector.py](code/populate_index_vector.py) will populate the AI Search index including the vector field. It uses Azure OpenAI to create the embeddings. 
 
 
 ## Part Three - Using AI Search in RAG pattern. With and without vectors, and with Entra ID and API Key
 These examples will show a simple RAG (Retrieval Augumented Generation) structure. The user question is sent to AI Search, the documents returned are sent to Azure OpenAI and finally the answer from Azure OpenAI is sent to the user. 
 
 ### Search with no vectors
-This script [search_no_vector.py](search_no_vector.py) shows an example on RAG with no vector on the index created earlier
+This script [search_no_vector.py](code/search_no_vector.py) shows an example on RAG with no vector on the index created earlier
 
 ### Search with vectors
-This script [search_vector.py](search_vector.py) shows an example on RAG with vector on the index created earlier
+This script [search_vector.py](code/search_vector.py) shows an example on RAG with vector on the index created earlier
 
 ### Search with no vector using API Key 
-This script [search_no_vector_api_key.py](search_no_vector_api_key.py) similar to the no vector search code above, but shows the use of API Key instead of Entra ID
+This script [search_no_vector_api_key.py](code/search_no_vector_api_key.py) similar to the no vector search code above, but shows the use of API Key instead of Entra ID
